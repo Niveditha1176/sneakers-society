@@ -1,0 +1,436 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+body{
+  font-family: "SUSE", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+nav{
+    background-color: darkolivegreen;
+    color: white;
+    padding: 20px 50px ;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    align-items:center ;
+    background-color: gray;
+    padding: 10px 20px ;
+    border-radius: 10px;
+}
+
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+
+.searchInput::placeholder{
+    color: lightgray;
+}
+
+.limitedOffer{
+    font: 1em sans-serif;
+    font: size 20px; 
+    border-bottom: 2px solid green;
+}
+
+.navBottom{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.slider{
+    background:white ;
+   overflow: hidden;
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1s ease-in-out ;
+
+}   
+
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+.sliderTitle{
+    position: absolute;
+    top: 10;
+    right: 10%;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: black;
+    
+    
+}
+
+.sliderPrice{
+    position: absolute;
+    top: 10;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: black;
+    border: 1px solid gray ;
+    
+    
+
+}
+
+.buy{
+    position: relative;
+    top: 50;
+    left: 10%;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:antiquewhite;
+    background-color: black;
+    border: 1px solid gray ;
+    cursor: pointer;
+}
+
+.buy:hover{
+    background-color: wheat;
+    color: black;
+}
+
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.featureIcon{
+    width: 50px;
+    height: 50px;
+}
+
+.featureTitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.featureDesc{
+    color: gray;
+    width: 50%;
+    height: 100px;
+}
+
+.product{
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+}
+.productImg{
+    width:50%
+}
+
+.productDetails{
+    position:absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+
+.productTitle{
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.productDesc{
+    font-style: 25px;
+    color: gray;
+}
+
+.colors,.sizes{
+    display: flex;
+    margin-bottom: 20px;
+}
+.color{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: rgb(119, 15, 15);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.color:last-child{
+    background-color: darkblue;
+}
+
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-style: 20px;
+}
+
+.productButton{
+    float: bottom;
+    padding: 10px 20px;
+    background-color: black;
+    color: aliceblue;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.productButton:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.payment{
+    width:500px;
+    height: 500px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 0;
+    bottom: 0;right: 0;left: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    box-shadow: -10px 10px 35px -2px rgba(23,22,22,0.77) inset;
+-webkit-box-shadow: -10px 10px 35px -2px rgba(23,22,22,0.77) inset;
+-moz-box-shadow: -10px 10px 35px -2px rgba(23,22,22,0.77) inset;
+
+}
+
+.payTitle{
+    font-size: 20px;
+    color: black;
+}
+
+label{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.payInput{
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+
+}
+.payInput::placeholder{
+    color: gray ;
+}
+
+.cardIcons{
+    display: flex;
+}
+.cardIcon{
+    margin-right: 10px;
+}
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.small{
+    width: 30%;
+}
+
+.payButton{
+    position: absolute;
+    height: 40px;
+    bottom: -40px;
+    width: 100%;
+    left: 0;
+    box-shadow: -10px 10px 35px -2px rgba(23,22,22,0.77) inset;
+    -webkit-box-shadow: -10px 10px 35px -2px rgba(23,22,22,0.77) inset;
+    -moz-box-shadow: -10px 10px 35px -2px rgba(23,22,22,0.77) inset;
+    background-color: darkolivegreen;
+    color: white;
+    cursor: pointer;
+}
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: gray;
+    color:white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.footer{
+    display: flex;
+}
+
+.footerLeft{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.fmenuTitle{
+    font-size: 16px;
+}
+.fmenuList{
+    padding:0;
+    list-style: none;
+}
+.flistItem{
+    margin-right: 10px;
+    color: darkgray;
+
+}
+@media screen and (max-width:480px) {
+    nav{
+      padding: 20px;
+    }
+  
+    .search{
+      display: none;
+    }
+  
+    .navBottom{
+      flex-wrap: wrap;
+    }
+  
+    .menuItem{
+      margin: 20px;
+      font-weight: 700;
+      font-size: 20px;
+    }
+  
+    .slider{
+      clip-path: none;
+    }
+  
+    .sliderImg{
+      width: 90%;
+    }
+  
+    .sliderBg{
+      width: 100%;
+      height: 100%;
+    }
+  
+    .sliderTitle{
+      display: none;
+    }
+  
+    .sliderPrice{
+      top: unset;
+      bottom: -50;
+      left: 0;
+      background-color: lightgrey;
+    }
+  
+    .buyButton{
+      right: 0;
+      top: 0;
+    }
+  
+    .features{
+      flex-direction: column;
+    }
+  
+    .product{
+      clip-path: none ;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .productImg{
+      width: 80%;
+    }
+  
+    .productDetails{
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      top: 0;
+    }
+  
+    .productTitle{
+      font-size: 50px;
+      margin: 0;
+    }
+  
+ 
+  
+    footer{
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footerLeft{
+      padding: 20px;
+      width: 90%;
+    }
+
+    
+  
+    .payment{
+      width: 90%;
+      padding: 20px;
+    }
+  
+}
+
+
+
+
+
