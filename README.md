@@ -1,2 +1,2 @@
 # sneakers-society
-a ecommerce website for sneakers
+a e-commerce website for sneakers
